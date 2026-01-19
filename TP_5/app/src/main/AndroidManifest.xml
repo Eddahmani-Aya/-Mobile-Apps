@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.tp2b">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Tp2b"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <!-- Activité de connexion (écran d'entrée) -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <!-- Activité principale (selon flavor) -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Tp2b">
+        </activity>
+
+        <!-- ============ ACTIVITÉS DE GESTION DES STAGES ============ -->
+
+        <!-- Activité 1: Spinner pour sélectionner une entreprise -->
+        <activity
+            android:name=".StageActivity"
+            android:exported="false"
+            android:label="Sélection d'entreprise"
+            android:theme="@style/Theme.Tp2b">
+        </activity>
+
+        <!-- Activité 2: ListView pour afficher les offres -->
+        <activity
+            android:name=".OffresActivity"
+            android:exported="false"
+            android:label="Offres de stage"
+            android:theme="@style/Theme.Tp2b">
+        </activity>
+
+        <!-- Activité 3: GridView pour afficher les candidats -->
+        <activity
+            android:name=".CandidatsActivity"
+            android:exported="false"
+            android:label="Candidats"
+            android:theme="@style/Theme.Tp2b">
+        </activity>
+
+    </application>
+
+    <!-- Permissions si nécessaire (optionnel) -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>
