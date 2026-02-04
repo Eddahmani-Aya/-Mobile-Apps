@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">LifeBalance</string>
+
+    <!-- MainActivity -->
+    <string name="add_task">Ajouter une tâche</string>
+    <string name="view_tasks">Voir les tâches</string>
+
+    <!-- AddTacheActivity -->
+    <string name="task_title_hint">Titre de la tâche</string>
+    <string name="description_hint">Description</string>
+    <string name="date_hint">Date (JJ/MM/AAAA)</string>
+    <string name="add_button">Ajouter la tâche</string>
+    <string name="title_is_required">Le titre est obligatoire</string>
+    <string name="task_added_successfully">Tâche ajoutée avec succès</string>
+
+    <!-- EditTacheActivity -->
+    <string name="edit_task_title">Modifier la tâche</string>
+    <string name="task_updated_successfully">Tâche modifiée avec succès</string>
+
+    <!-- item_tache.xml -->
+    <string name="task_title_placeholder">Titre</string>
+    <string name="date_placeholder">Date</string>
+
+</resources>
